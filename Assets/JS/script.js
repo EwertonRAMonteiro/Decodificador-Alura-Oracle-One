@@ -6,7 +6,7 @@ function encriptar(){
 
     var resultCripto = texto.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat")
 
-    document.getElementById('outText').innerHTML = '<textarea readonly id="textIn">'
+    document.getElementById('outText').innerHTML = '<textarea readonly id="textInput">'
         + resultCripto
         + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar<button>'
 }
@@ -16,7 +16,7 @@ function descriptar() {
 
     var resultDesripto = texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u")
 
-    document.getElementById('outText').innerHTML = '<textarea readonly id="textIn">'
+    document.getElementById('outText').innerHTML = '<textarea readonly id="textInput">'
         + resultDesripto + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar<button>'
 }
 
